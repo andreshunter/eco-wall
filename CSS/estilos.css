@@ -1,0 +1,443 @@
+/* las fuentes ------------*/
+
+/* las variables ------------*/
+
+:root{
+    --bg-body :rgb(161, 247, 161);
+    --primary-color : rgb(28, 236, 28);   
+    --fontsize-title: 27px;
+    --fontsize-parrafos : 13px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    height: 55px;
+    background-color:rgb(24, 104, 24);
+    /* aliniacion de parrafos------------*/
+    display: flex;
+}
+
+.logo-1{
+    width: 30%;
+
+}
+
+.logo{
+    margin-left: 30%;
+    margin-top: 5px;
+    width: 55px;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.titulo{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding: 0.1rem 0;
+}
+
+nav.parrafo  ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+P {
+    color: white;
+}
+
+.encabezado {
+    display: flex;
+}
+
+.encabezado > .imagen{
+    width:30%;
+}
+
+.imagen{
+    width:300px;
+    margin-bottom: 50px;
+    
+}
+
+
+nav.bg-encabezado{
+    background: #ffffff;
+}
+
+nav.bg-encabezado ul li a{
+    color:  rgb(24, 104, 24);
+    font-weight: bold;
+    position: relative;
+}
+
+
+nav.bg-encabezado ul li a::after{
+    width: 75%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+/* para la linea que aparece en el busqueda*/
+nav.bg-encabezado ul li a:hover{
+    color: var(--primary-color);
+}
+
+nav.bg-encabezado ul li a:hover::after{
+    background: var(--primary-color)
+
+}
+
+nav.bg-encabezado ul li.login{
+    margin-left: 150px;
+    margin-right: 20px;
+}
+
+nav.bg-encabezado ul li.registro a{
+    display: block;
+    padding: 12px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    color:#ffffff;
+    background: var(--primary-color);
+    border-radius: 4px;
+    
+}
+
+/* ------ cambio de paginas ------*/
+
+
+#eco{
+    
+    padding-top: 50px;
+}
+
+#eco .con-foto{
+    position: relative;
+    width: 450px;
+    margin-top:70px;
+}
+
+#eco .con-foto img{
+    z-index: 2;
+    position: relative;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin:10px auto;
+    display:block;
+}
+
+#eco .con-foto::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left:90px;
+    background: transparent;
+    border: 5px solid rgb(24, 104, 24);
+    z-index:1;
+}
+
+
+#eco .cont-info{
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+#eco .cont-info h1 span{
+    color:rgb(24, 104, 24);
+    border-bottom: 6px solid rgb(24, 104, 24) ;
+    margin-bottom: 20px;
+}
+
+#eco .cont-info h1 {
+    color:rgb(24, 104, 24);
+    font-size: 33px;
+    
+}
+#eco .cont-info h3{
+    color:rgb(24, 104, 24);
+    margin-top: 10px;
+    font-size: 27px;
+    
+}
+#eco .cont-info h2 span{
+    color:rgb(24, 104, 24);
+    border-bottom: 5px solid rgb(24, 104, 24) ;
+    font-size: 30px;
+    
+}
+
+#eco .cont-info h3 span{
+    color:rgb(24, 104, 24);
+    border-bottom: 4px solid rgb(24, 104, 24) ;
+    margin-top: 10px;
+    font-size: 27px;
+   
+}
+
+#eco .cont-info p {
+    color:rgb(24, 104, 24);
+    font-size: var(--fontsize-parrafos)
+}
+
+#eco .cont-info .destacada h2{
+     color:rgb(24, 104, 24);
+     font-size: var(--fontsize-title);
+     margin-top: 20px;
+}
+
+
+#cuerpo{
+    padding-bottom: 100px;
+}
+#cuerpo .ecosistema img{
+
+    padding-bottom: 50px;
+    width: 550px;
+    margin-top:70px;
+    
+}
+#cuerpo .container h2{
+    text-align: center;
+}
+
+#cuerpo .container h2 span{
+    
+    color:rgb(24, 104, 24);
+    font-weight: bold;
+    border-bottom: 4px solid rgb(24, 104, 24) ;
+}
+
+#cuerpo .articulos{
+    text-align: center;
+    margin-top: 55px;
+    color:rgb(24, 104, 24);
+}
+
+#cuerpo .articulos p{
+    color:rgb(24, 104, 24);
+    margin-top: 50px;
+    font-weight: bold;
+    margin-left: 70px;
+    font-size: 17px;
+}
+
+#cuerpo .articulos h3 span{
+    margin-left: 50px;
+    font-weight: bold;
+    border-bottom: 4px solid rgb(24, 104, 24) ;
+}
+
+
+#carrusel{
+    padding-bottom:120px;
+    text-align: center;
+    
+    
+}
+
+#carrusel .carrusele::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    bottom: 30px;
+
+    left:180px;
+    background: transparent;
+    border: 5px solid rgb(24, 104, 24);
+    z-index:0;
+    margin-top: 30px;
+}
+
+#carrusel .carrusele{
+    width:1000px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    top: 20px;
+    z-index:1;
+}
+
+#carrusel .carru h2 span{
+    font-weight: bold;
+    margin: 180px;
+    color:rgb(24, 104, 24)  ;
+}
+
+
+#final .logo img{
+  width: 220px;
+  border: 2px solid hsl(199, 43%, 37%);
+  padding: 5px;
+  border-radius: 50%;
+  margin:10px auto;
+  display:block;
+  margin-right: 400px;
+  
+
+}
+
+
+#final {
+    background-color: rgb(24, 104, 24);
+}
+
+
+
+#dinal article {
+    background-color: brown;
+    
+}
+
+#final .final2 img{
+    margin-top: 40px;
+    margin-left: 80px;
+    width: 220px;
+    border: 4px solid rgb(28, 236, 28);
+    padding: 5px;
+    border-radius: 50%;
+    
+    display:block;
+   
+}
+
+#final .separar ul li p{
+    color: #ffffff;
+    
+}
+
+#final .separar ul li{
+    color: #fff;
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    
+    
+    
+}
+
+#final .final1 ul li a{
+    text-decoration: none;
+}
+
+#final .separar{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+}
+
+#final .final3 ul li{
+    font-size: 15px;
+    display: block;
+    font-weight: 900;
+}
+
+#final .dividir h5{
+   
+    color: #ffffff;
+}
+
+#final .dividir{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+
+}
+#final .salto1{
+    margin-bottom: 50px;
+}
+
+#final .salto2 p{
+    font-weight: 500;
+}
+
+.iniciar_sesion{
+    color:  rgb(24, 104, 24);
+    font-weight: bold;
+    position: relative;
+}
+
+.f_registro{
+    color:  rgb(24, 104, 24);
+    font-weight: bold;
+    position: relative;
+    
+}
+
+#exampleModalLabel .f_registro h1{
+    text-align: center;
+}
+
+.cambiar_color{
+    color:  rgb(24, 104, 24);
+    font-weight: bold;
+    position: relative;
+}
+
+.cambiar_color2{
+    color:  var(--primary-color);
+    font-weight: bold;
+    position: relative;
+}
+
+.boton {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.icono-tienda{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.icono-tienda:hover{
+    text-decoration: none;
+    color: #0df053;
+    background-color: #fff;
+}
+
+.text-center{
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+.item{
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+}
